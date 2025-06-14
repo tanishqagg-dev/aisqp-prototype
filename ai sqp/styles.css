@@ -1,0 +1,302 @@
+/* 🎨 Enhanced Global Styles for Multi-Page App */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* 🏠 Home Page Styles */
+.home-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.hero-section {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.demo-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transform: rotate(5deg);
+  transition: transform 0.3s ease;
+}
+
+.demo-card:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+
+.features-section {
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* 📱 Navigation Styles */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(255,255,255,0.8) !important;
+}
+
+/* 📄 Page Styles */
+.dashboard-page,
+.papers-page,
+.about-page,
+.contact-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* 🎴 Card Enhancements */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0 !important;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+/* 📋 Form Enhancements */
+.form-control,
+.form-select {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* 🔘 Button Enhancements */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #0d6efd, #0056b3);
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(45deg, #198754, #146c43);
+  box-shadow: 0 4px 15px rgba(25, 135, 84, 0.3);
+}
+
+.btn-success:hover {
+  background: linear-gradient(45deg, #146c43, #0f5132);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 135, 84, 0.4);
+}
+
+/* 📄 Paper Card Styles */
+.paper-card {
+  transition: all 0.3s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 📱 Empty State */
+.empty-state {
+  padding: 3rem;
+  text-align: center;
+}
+
+.empty-state h3 {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* 🎨 Feature Items */
+.feature-item {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.feature-item:hover {
+  background-color: #e9ecef;
+}
+
+/* 📚 My Papers Page Styles */
+.mypapers-page #papers-grid {
+  display: block !important; /* Changed from flex to block */
+}
+
+.mypapers-page #papers-grid .col-xl-4,
+.mypapers-page #papers-grid .col-lg-6,
+.mypapers-page #papers-grid .col-md-6 {
+  float: left; /* Force float for grid */
+  margin-bottom: 1.5rem;
+}
+
+.mypapers-page .paper-card {
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.125);
+  width: 100%;
+}
+
+.mypapers-page .paper-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.mypapers-page .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mypapers-page .card-footer {
+  margin-top: auto;
+}
+
+.mypapers-page .btn-group {
+  width: 100%;
+}
+
+.mypapers-page .btn-group .btn {
+  flex: 1;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.25rem;
+}
+
+/* Clear floats after grid */
+.mypapers-page #papers-grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Remove conflicting styles */
+.mypapers-page #papers-grid {
+  gap: 0 !important; /* Remove gap */
+}
+
+/* Animation for grid items */
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
